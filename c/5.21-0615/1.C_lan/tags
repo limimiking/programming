@@ -1,0 +1,63 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Hexagonal	EP45.c	/^int64_t Hexagonal(int64_t n) {$/;"	f
+MAX_N	3.prime.c	10;"	d	file:
+MAX_N	5.prime_3.c	9;"	d	file:
+MAX_N	5.prime_4.c	9;"	d	file:
+MAX_N	EP07-2.c	9;"	d	file:
+MAX_N	EP07.c	9;"	d	file:
+MAX_N	EP10.c	9;"	d	file:
+MAX_N	EP35.c	10;"	d	file:
+MAX_N	EP37.c	10;"	d	file:
+PUTC	2.my_printf.c	34;"	d	file:
+PUTC	2.my_printf.c	68;"	d	file:
+Pentagonal	EP45.c	/^int64_t Pentagonal(int64_t n) {$/;"	f
+Triangle	EP45.c	/^int64_t Triangle(int64_t n) {$/;"	f
+ans	5.prime_3.c	/^int ans[MAX_N + 5] = {0};$/;"	v
+binary_search	EP45.c	/^int binary_search(int64_t (*arr)(int64_t), int64_t n, int64_t x) {$/;"	f
+cnt	5.prime_3.c	/^int cnt = 0;$/;"	v
+get_digit	EP35.c	/^int get_digit(int n) {$/;"	f
+get_digit	EP37.c	/^int get_digit(int n) {$/;"	f
+init_prime	5.prime_3.c	/^void init_prime() {$/;"	f
+init_prime	5.prime_4.c	/^void init_prime() {$/;"	f
+init_prime	EP07-2.c	/^void init_prime() {$/;"	f
+init_prime	EP07.c	/^void init_prime() {$/;"	f
+init_prime	EP10.c	/^void init_prime() {$/;"	f
+init_prime	EP35.c	/^void init_prime() {$/;"	f
+init_prime	EP37.c	/^void init_prime() {$/;"	f
+is_prime	3.prime.c	/^int is_prime(int n) {$/;"	f
+is_prime	EP35.c	/^int is_prime[MAX_N + 5] = {0};$/;"	v
+is_prime	EP37.c	/^int is_prime[MAX_N + 5] = {0};$/;"	v
+is_val	EP35.c	/^int is_val(int n) {$/;"	f
+is_val	EP37.c	/^int is_val(int n) {$/;"	f
+main	1.reverse_num.c	/^int main() {$/;"	f
+main	2.my_printf.c	/^int main() {$/;"	f
+main	3.c	/^int main() {$/;"	f
+main	3.prime.c	/^int main() {$/;"	f
+main	5.prime_3.c	/^int main() {$/;"	f
+main	5.prime_4.c	/^int main() {$/;"	f
+main	90-2.c	/^int main() {$/;"	f
+main	90-3.c	/^int main() {$/;"	f
+main	EP07-2.c	/^int main() {$/;"	f
+main	EP07.c	/^int main() {$/;"	f
+main	EP10.c	/^int main() {$/;"	f
+main	EP35.c	/^int main() {$/;"	f
+main	EP37.c	/^int main() {$/;"	f
+main	EP45.c	/^int main() {$/;"	f
+main	test.c	/^int main() {$/;"	f
+my_printf	2.my_printf.c	/^int my_printf(const char *frm, ...) {$/;"	f
+output_num	2.my_printf.c	/^int output_num(int x, int digit) {$/;"	f
+prime	5.prime_3.c	/^int prime[MAX_N + 5] = {0};$/;"	v
+prime	5.prime_4.c	/^int prime[MAX_N + 5] = {0};$/;"	v
+prime	EP07-2.c	/^int prime[MAX_N + 5] = {0};$/;"	v
+prime	EP07.c	/^int prime[MAX_N + 5] = {0};$/;"	v
+prime	EP10.c	/^int prime[MAX_N + 5] = {0};$/;"	v
+prime	EP35.c	/^int prime[MAX_N + 5] = {0};$/;"	v
+prime	EP37.c	/^int prime[MAX_N + 5] = {0};$/;"	v
+reverse_num	1.reverse_num.c	/^long long reverse_num(long long n) {$/;"	f
+reverse_num	2.my_printf.c	/^int reverse_num(int x, int *tmp) {$/;"	f
+reverse_num	90-3.c	/^int reverse_num(int n) {$/;"	f
