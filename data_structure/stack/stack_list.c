@@ -16,11 +16,12 @@ typedef struct ListNode {
 
 typedef struct Stack {
     Node *head;
-    int len;
+//    int len;
 }Stack;
 
 Node *initNode(int val) {
     Node *n = (Node *)malloc(sizeof(Node));
+    if (!n) return NULL;
     n->val = val;
     n->next = NULL;
     return n;
@@ -34,7 +35,7 @@ void freeNode(Node *n) {
 Stack *initStack() {
     Stack *s = (Stack *)malloc(sizeof(Stack));
     s->head = NULL;
-    s->len = 0;
+//    s->len = 0;
     return s;
 }
 
@@ -45,7 +46,7 @@ void freeStack(Stack *s) {
     while(p) {
         remove = p;
         p = p->next;
-        free(remove);
+        freeNode(remove);
     }
     return;
 }
@@ -53,22 +54,23 @@ void freeStack(Stack *s) {
 int push(Stack *s, int val) {
     if (!s) return 0;
     Node *n = initNode(val);
+    if (!n) return 0;
     n->next = s->head;
     s->head = n;
-    s->len++;
+//    s->len++;
     return 1;
 }
 
 int isEmpty(Stack *s) {
-    return !s->len;
+    return !(s && s->head);
 }
 
 int pop(Stack *s) {
-    int val = s->head->val;
     Node *p = s->head;
+    int val = p->val;
     s->head = p->next;
-    free(p);
-    s->len--;
+    freeNode(p);
+//    s->len--;
     return val;
 }
 
@@ -80,7 +82,7 @@ void showStack(Stack *s) {
         printf("%d->", p->val);
         p = p->next;
     }
-    printf("]\n");
+    printf("NULL]\n");
     printf("-------------\n");
     return;
 }
