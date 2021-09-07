@@ -33,8 +33,7 @@ void freeNode(Node *n) {
 
 Stack *initStack() {
     Stack *s = (Stack *)malloc(sizeof(Stack));
-    s->head = (Node *)malloc(sizeof(Node));
-    s->head->next = NULL;
+    s->head = NULL;
     s->len = 0;
     return s;
 }
@@ -54,8 +53,8 @@ void freeStack(Stack *s) {
 int push(Stack *s, int val) {
     if (!s) return 0;
     Node *n = initNode(val);
-    n->next = s->head->next;
-    s->head->next = n;
+    n->next = s->head;
+    s->head = n;
     s->len++;
     return 1;
 }
@@ -65,9 +64,9 @@ int isEmpty(Stack *s) {
 }
 
 int pop(Stack *s) {
-    int val = s->head->next->val;
-    Node *p = s->head->next;
-    s->head->next = p->next;
+    int val = s->head->val;
+    Node *p = s->head;
+    s->head = p->next;
     free(p);
     s->len--;
     return val;
@@ -75,7 +74,7 @@ int pop(Stack *s) {
 
 void showStack(Stack *s) {
     if (!s) return;
-    Node *p = s->head->next;
+    Node *p = s->head;
     printf("Stack:[");
     while(p) {
         printf("%d->", p->val);
