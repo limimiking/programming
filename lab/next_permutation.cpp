@@ -36,12 +36,13 @@ bool next_perm(BidirIt first, BidirIt last)
 }
 
 int main() {
-    int arr[2] = {1, 2};
+    int arr[4] = {1, 2, 3, 4};
     // std::string s = "ab";
     do {
-        std::cout << arr[0] << ',' << arr[1] << std::endl;
+        for (int& c : arr) std::cout << c << ' ';
+        std::cout << std::endl;
         // std::cout << s << '\n';
     // } while(next_perm(s.begin(), s.end()));
-    } while (next_perm(arr, arr + 2));
+    } while (next_perm(arr, arr + 4));
     return 0;
 }
